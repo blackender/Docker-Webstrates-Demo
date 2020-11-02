@@ -27,3 +27,13 @@ sudo yum -y install docker-ce
 ```bash
 brew install docker
 ```
+
+### 安装Docker-compose
+```bash
+# 安装
+curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+# 设置权限
+chmod +x /usr/local/bin/docker-compose
+# 查看版本
+sudo docker-compose -v
+```
