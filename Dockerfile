@@ -1,7 +1,8 @@
 From node:8-alpine
 
 # 安装git
-RUN apk update && apk upgrade && \ apk add --no-cache git
+RUN apk update && apk upgrade && \
+    apk add --no-cache git
 
 # 把Webstrates代码clone到DockerFile所在目录的“app”文件夹下
 RUN git clone https://github.com/Webstrates/Webstrates.git /app
@@ -19,4 +20,4 @@ RUN npm run build
 EXPOSE 7007
 
 # 启动Webstrates server
-ENTRYPOINT ["npm", "start"]
+ENTRYPOINT [ "npm", "start" ]
