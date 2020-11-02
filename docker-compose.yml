@@ -13,7 +13,7 @@ services:
             - ./config/config.json:/app/config.json
             - ./data/uplods:/app/uplods
 
-    mango:
+    mongo:
         image: mongo
         restart: always
         volumes: 
