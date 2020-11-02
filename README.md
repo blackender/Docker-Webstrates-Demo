@@ -7,7 +7,7 @@
 2. 自动下载npm环境，编译Webstrates
 3. 从DockerHub上获取MongoDB镜像，与Webstrates连接
 
-## 安装与使用
+## 安装
 
 ### 安装Docker
 
@@ -33,7 +33,20 @@ brew install docker
 # 安装
 curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 # 设置权限
-chmod +x /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 # 查看版本
 sudo docker-compose -v
 ```
+
+## 使用
+
+### 启动服务
+```bash
+cd <docker-compose.yml所在文件夹>
+sudo docker-compose up -d
+# 如果需要关闭服务则使用命令
+sudo docker-compose down
+```
+
+### 测试
+在浏览器中打开```http://localhost:7007/```,看到空白页面即为成功
