@@ -54,9 +54,9 @@ sudo docker-compose -v
 ### 启动服务
 ```bash
 cd <docker-compose.yml所在文件夹>
-sudo docker-compose up -d
+docker-compose up -d
 # 如果需要关闭服务则使用命令
-sudo docker-compose down
+docker-compose down
 ```
 
 ### 测试
