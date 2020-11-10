@@ -22,10 +22,21 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 sudo yum -y install docker-ce
 ```
 
-
 #### MacOS
 ```bash
 brew install docker
+```
+
+#### 给docker赋予sudo权限
+```bash
+# 创建docker组
+sudo groupadd docker
+# 将当前用户加入docker组
+sudo gpasswd -a ${USER} docker
+# 重启docker服务
+sudo service docker restart
+# 刷新docker成员
+newgrp - docker
 ```
 
 ### 安装Docker-compose
