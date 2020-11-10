@@ -46,7 +46,7 @@ curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compo
 # 设置权限
 sudo chmod +x /usr/local/bin/docker-compose
 # 查看版本
-sudo docker-compose -v
+docker-compose -v
 ```
 
 ## 使用
