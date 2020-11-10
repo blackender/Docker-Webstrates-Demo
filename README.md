@@ -27,7 +27,7 @@ sudo yum -y install docker-ce
 brew install docker
 ```
 
-#### 给docker赋予sudo权限
+#### 设置docker的sudo权限
 ```bash
 # 创建docker组
 sudo groupadd docker
