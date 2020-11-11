@@ -27,6 +27,25 @@ sudo yum -y install docker-ce
 brew install docker
 ```
 
+#### 设置国内docker-hub源
+```bash
+# 创建位置文件夹（如果已存在可以不做此部）
+sudo mkdir -p /etc/docker
+# 创建daemon配置文件
+sudo vim /etc/docker/daemon.json
+# 在daemon.json中国内源地址
+{
+"registry-mirrors": [
+  "https://docker.mirrors.ustc.edu.cn",
+  "http://hub-mirror.c.163.com"
+  ]
+}
+# 重新加载daemon文件
+sudo systemctl daemon-reload
+# 启动docker
+sudo systemctl start docker
+```
+
 #### 设置docker的sudo权限
 ```bash
 # 创建docker组
