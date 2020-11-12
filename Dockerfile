@@ -1,6 +1,6 @@
 From node:8-alpine
 
-MAINTAINER blackender
+MAINTAINER blackender <taotaomails@gmail.com>
 
 # 安装git
 RUN apk update && apk upgrade && \
