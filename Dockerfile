@@ -1,5 +1,7 @@
 From node:8-alpine
 
+MAINTAINER blackender
+
 # 安装git
 RUN apk update && apk upgrade && \
     apk add --no-cache git
