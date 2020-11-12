@@ -3,7 +3,7 @@ version: "3.5"
 services:
 
     webstrates:
-        image: blackender/webstrates:1.0
+        image: blackender/webstrates:latest
         container_name: webstrates
         depends_on: 
             - mongo
